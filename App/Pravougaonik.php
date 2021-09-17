@@ -2,7 +2,7 @@
 
 namespace App;
 
-class Pravougaonik implements GeometrijskiOblik
+class Pravougaonik extends AbstractGeometrijskiOblik implements GeometrijskiOblik
 {
     private $a;
     private $b;
@@ -20,17 +20,17 @@ class Pravougaonik implements GeometrijskiOblik
         }
     }
 
-    protected function Obim()
+    protected function obim()
     {
         return 2*$this->a + 2*$this->b;
     }
 
-    protected function Povrsina()
+    protected function povrsina()
     {
         return $this->a*$this->b;
     }
 
-    public function Ispis()
+    public function ispis()
     {
         return "Pravougaonik stranica a:".$this->a." i b:".$this->b.", ima obim:".$this->Obim()." i površinu:".$this->Povrsina();
     }

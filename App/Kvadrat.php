@@ -2,7 +2,7 @@
 
 namespace App;
 
-class Kvadrat implements GeometrijskiOblik
+class Kvadrat extends AbstractGeometrijskiOblik implements GeometrijskiOblik
 {
     private $a;
 
@@ -16,17 +16,17 @@ class Kvadrat implements GeometrijskiOblik
         { throw new \Exception("Greška!!");}
     }
 
-    protected function Obim()
+    protected function obim()
     {
         return 4*$this->a;
     }
 
-    protected function Povrsina()
+    protected function povrsina()
     {
         return pow($this->a,2);
     }
 
-    public function Ispis()
+    public function ispis()
     {
         return "Kvadrat stranice a:".$this->a.", ima obim:".$this->Obim()." i površinu:".$this->Povrsina();
     }

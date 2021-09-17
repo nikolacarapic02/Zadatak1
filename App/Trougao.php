@@ -2,7 +2,7 @@
 
 namespace App;
 
-class Trougao implements GeometrijskiOblik
+class Trougao extends AbstractGeometrijskiOblik implements GeometrijskiOblik
 {
     private $a, $b, $c, $ha;
 
@@ -21,17 +21,17 @@ class Trougao implements GeometrijskiOblik
         }
     }
 
-    protected function Obim()
+    protected function obim()
     {
         return $this->c + $this->b + $this->a;
     }
 
-    protected function Povrsina()
+    protected function povrsina()
     {
         return $this->ha*$this->a/2;
     }
 
-    public function Ispis()
+    public function ispis()
     {
         return "Trougao stranica a:".$this->a." i b:".$this->b." i c:".$this->c.", visine ha:".$this->ha.", ima obim:".$this->Obim()." i površinu:".$this->Povrsina();
     }

@@ -4,5 +4,5 @@ namespace App;
 
  interface GeometrijskiOblik
 {
-    public function Ispis();
+    public function ispis();
 }

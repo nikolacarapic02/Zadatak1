@@ -2,7 +2,7 @@
 
 namespace App;
 
-class Krug implements GeometrijskiOblik
+class Krug extends AbstractGeometrijskiOblik implements GeometrijskiOblik
 {
     const PI = 3.14;
     private $r;
@@ -19,17 +19,17 @@ class Krug implements GeometrijskiOblik
         }
     }
 
-    protected function Obim()
+    protected function obim()
     {
         return 2*$this->r*self::PI;
     }
 
-    protected function Povrsina()
+    protected function povrsina()
     {
         return pow($this->r,2)*self::PI;
     }
 
-    public function Ispis()
+    public function ispis()
     {
         return "Krug poluprečnika r:".$this->r.", ima obim:".$this->Obim()." i površinu:".$this->Povrsina();
     }
