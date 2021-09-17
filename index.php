@@ -8,24 +8,24 @@ use App\GeometrijskiOblik;
 
 require "autoload.php";
 
-try
-{
-    function IspisFigure(GeometrijskiOblik $obj)
+function ispisFigure(GeometrijskiOblik $obj)
     {
-        return $obj->Ispis();
+        return $obj->ispis();
     }
 
+try
+{
     $k = new Kvadrat(3);
-    echo IspisFigure($k).PHP_EOL;
+    echo ispisFigure($k).PHP_EOL;
 
     $p = new Pravougaonik(2,4);
-    echo IspisFigure($p).PHP_EOL;
+    echo ispisFigure($p).PHP_EOL;
 
     $kr = new Krug(6);
-    echo IspisFigure($kr).PHP_EOL;
+    echo ispisFigure($kr).PHP_EOL;
 
     $t = new Trougao(5, 6, 7, 3);
-    echo IspisFigure($t).PHP_EOL;
+    echo ispisFigure($t).PHP_EOL;
 }
 catch(Exception $e)
 {
