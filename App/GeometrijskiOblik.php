@@ -2,7 +2,7 @@
 
 namespace App;
 
-interface GeometrijskiOblik
+ interface GeometrijskiOblik
 {
     public function Obim();
     public function Povrsina();

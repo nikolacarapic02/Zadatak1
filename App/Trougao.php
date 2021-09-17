@@ -4,7 +4,7 @@ namespace App;
 
 class Trougao implements GeometrijskiOblik
 {
-    public $a, $b, $c, $ha;
+    private $a, $b, $c, $ha;
 
     public function __construct($a, $b, $c , $ha)
     {

@@ -4,7 +4,7 @@ namespace App;
 
 class Kvadrat implements GeometrijskiOblik
 {
-    public $a;
+    private $a;
 
     public function __construct($a)
     {

@@ -4,8 +4,8 @@ namespace App;
 
 class Pravougaonik implements GeometrijskiOblik
 {
-    public $a;
-    public $b;
+    private $a;
+    private $b;
 
     public function __construct($a, $b)
     {

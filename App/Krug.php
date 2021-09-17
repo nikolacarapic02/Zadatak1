@@ -5,7 +5,7 @@ namespace App;
 class Krug implements GeometrijskiOblik
 {
     const PI = 3.14;
-    public $r;
+    private $r;
 
     public function __construct($r)
     {
