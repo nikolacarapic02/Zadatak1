@@ -21,12 +21,12 @@ class Trougao implements GeometrijskiOblik
         }
     }
 
-    public function Obim()
+    protected function Obim()
     {
         return $this->c + $this->b + $this->a;
     }
 
-    public function Povrsina()
+    protected function Povrsina()
     {
         return $this->ha*$this->a/2;
     }

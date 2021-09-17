@@ -19,12 +19,12 @@ class Krug implements GeometrijskiOblik
         }
     }
 
-    public function Obim()
+    protected function Obim()
     {
         return 2*$this->r*self::PI;
     }
 
-    public function Povrsina()
+    protected function Povrsina()
     {
         return pow($this->r,2)*self::PI;
     }

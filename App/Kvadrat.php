@@ -16,12 +16,12 @@ class Kvadrat implements GeometrijskiOblik
         { throw new \Exception("Greška!!");}
     }
 
-    public function Obim()
+    protected function Obim()
     {
         return 4*$this->a;
     }
 
-    public function Povrsina()
+    protected function Povrsina()
     {
         return pow($this->a,2);
     }

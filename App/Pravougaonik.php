@@ -20,12 +20,12 @@ class Pravougaonik implements GeometrijskiOblik
         }
     }
 
-    public function Obim()
+    protected function Obim()
     {
         return 2*$this->a + 2*$this->b;
     }
 
-    public function Povrsina()
+    protected function Povrsina()
     {
         return $this->a*$this->b;
     }
